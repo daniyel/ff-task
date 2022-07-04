@@ -1,8 +1,8 @@
 import unittest
 import json
 
-from app.app import app
-from app.db import db
+from main.app import app
+from main.db import db
 
 TEST_DB = '/tmp/test.db'
 
