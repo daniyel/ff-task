@@ -23,7 +23,8 @@ shell> pipenv install <package> --dev
 ## Run project
 
 ```sh
-shell> set FLASK_APP=app/app.py python3 -m flask run
+shell> export FLASK_APP=main/app.py
+shell> python3 -m flask run
 ```
 
 ## Testing
