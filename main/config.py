@@ -1,1 +1,1 @@
-SQLITE_CONFIG = 'sqlite:////tmp/test.db'
+SQLITE_CONFIG = 'sqlite:////tmp/pp-app.db'
