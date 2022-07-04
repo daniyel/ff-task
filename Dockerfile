@@ -1,4 +1,4 @@
-FROM python:3.9-slim as base
+FROM python:3.8-slim as base
 
 # Setup env
 ENV LANG C.UTF-8
@@ -33,6 +33,7 @@ USER appuser
 # Install application into container
 COPY . .
 
+EXPOSE 5000
+
 # Run the application
-ENTRYPOINT ["python", "-m", "http.server"]
-CMD ["--directory", "directory", "8000"]
+CMD ["waitress-serve", "--port=5000", "main.app:app"]

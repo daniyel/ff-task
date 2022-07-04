@@ -43,3 +43,7 @@ Fix pylint issues with:
 ```sh
 > autopep8 --in-place --aggressive --recursive .
 ```
+
+## Running docker container
+
+To start docker container run `docker-compose up`. If you need to rebuild image execute `docker-compose up --build`. To destroy container run `docker-compose down`.
