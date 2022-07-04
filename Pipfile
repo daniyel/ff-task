@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-restful = "*"
+flask-sqlalchemy = "*"
+sqlalchemy = "*"
+numpy = "*"
+waitress = "*"
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+pylint-flask-sqlalchemy = "*"
+pylint-flask = "*"
+pytest = "*"
+coverage = "*"
+
+[requires]
+python_version = "3.8"
