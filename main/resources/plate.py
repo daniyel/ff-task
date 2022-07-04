@@ -11,10 +11,7 @@ class Plate(Resource):
 
     def post(self):
         try:
-            # Validate request body against schema data types
             data = request.get_json()
-
-            # print(json.dumps(data))
 
             if 'plate' not in data:
                 return {'message': 'Field plate is missing.'}, 400
